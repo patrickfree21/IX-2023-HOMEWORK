@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/dist/output.css" rel="stylesheet">
+
+    </head>
+
+    <body class="h-screen bg-gradient-to-b from-blue-200 to-blue-500">
+
+        <div class="text-white text-4xl text-center mt-10">
+            <b> Badly Explained Movies </b>
+        </div>
+
+        <hr class="mt-20 mx-40 mb-10"/>
+
+            <div class="text-center text-xl text-white">
+                <h3 id="explanation"> </h3>
+            </div>
+
+        <hr class="mt-10 mx-40 mb-20"/>
+
+        <div class="text-center mb-10">
+            <input
+            id="movieGuess"
+            type="text"
+            class="form-control w-200"
+            placeholder="Enter Guess Here"
+          />
+        </div>
+
+            <div class="text-center">
+               
+        <button
+            onclick="checkMovie()"
+            type="button"
+            class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 w-60"
+          >
+            Submit
+        </button>
+
+        <button 
+        type="button" 
+        class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        onclick="showHint()"
+        > 
+        Show Hint </button>
+
+    </div>
+
+    <div class="text-center text-xl text-white">
+        <h3 id="hint"> </h3>
+    </div>
+
+           
+
+
+    </body>
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    </html>

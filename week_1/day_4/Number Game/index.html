@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/dist/output.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="container mx-auto bg-black m-5 p-5 text-center"> 
+
+            <div class="conatiner-xxl bg-white pt-5">
+                <h1 class="text-8xl">
+                    Number Game
+                </h1>
+
+                <h3 class="mt-10 text-2xl mb-10"> 
+                    This is a small number guessing game, it will teach you about the DOM.
+                </h3>
+
+                <hr class="mt-5 mx-20 mb-5"/>
+
+               <h3 class="text-2xl">
+                Guess a Number
+               </h3>
+
+               <div class="input-group p-5">
+                <span class="input-group-text"></span>
+                <input
+                  id="guessedNumber"
+                  type="number"
+                  class="num-control"
+                  placeholder="Enter your guess"
+                />
+                <button
+                    onclick="checkGuess()"
+                    type="button"
+                    class="btn btn-dark mt-3"
+                    >
+                    Submit
+            </button>
+               
+              </div>
+            </div>
+            
+        </div>
+
+    </body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    </html>
